@@ -95,7 +95,7 @@ Feature engineering (all symbols):
 
 Also fetches **fundamental data** (P/E, EPS, margins, debt/equity, beta) via yfinance and **macro indicators** (Fed Funds Rate, CPI, Unemployment, 10Y Treasury Yield) via the **FRED API**.
 
-### Module 3 - Visualisation (`Dashboard.ipynb`)
+### Module 3 - Visualization (`Visualization.ipynb`)
 
 Produces a single interactive Plotly dashboard saved as `outputs/reports/dashboard.html`:
 
