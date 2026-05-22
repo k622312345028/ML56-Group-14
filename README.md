@@ -6,7 +6,7 @@ FinAgent is an end-to-end pipeline that collects live financial data, cleans and
 The project integrates:
 - Yahoo Finance market data
 - FRED macroeconomic data
-- Interactive Plotly dashboards
+- Interactive Plotly charts
 - AI-generated financial commentary using Groq Llama 3.3 70B
 
 ---
@@ -97,11 +97,9 @@ Also fetches **fundamental data** (P/E, EPS, margins, debt/equity, beta) via yfi
 
 ### Module 3 - Visualization (`Visualization.ipynb`)
 
-Produces a single interactive Plotly dashboard saved as `outputs/reports/dashboard.html`:
-
 | Chart | Description |
 |-------|-------------|
-| Price + MA + Bollinger Bands | Trend line with overlaid MA-7, MA-30, and BB bands |
+| Cumulative Performance | Normalised cumulative return comparison across assets to evaluate long-term relative performance trends |
 | Volume bars | Green/red volume bars colour-coded by daily return |
 | Correlation heatmap | Pearson correlation of daily returns across all assets |
 | RSI-14 panel | Momentum indicator with overbought (70) / oversold (30) lines |
@@ -166,7 +164,7 @@ See `requirements.txt` for the full pinned list. Key libraries:
 |---------|---------|
 | `yfinance` | Yahoo Finance price + fundamental data |
 | `pandas` / `numpy` | Data manipulation and feature engineering |
-| `plotly` | Interactive charts and dashboard |
+| `plotly` | Interactive charts |
 | `matplotlib` / `seaborn` | Static chart exports |
 | `groq` | Groq LLM API client |
 | `requests` | NewsAPI and FRED REST calls |
