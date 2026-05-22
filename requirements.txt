@@ -1,0 +1,38 @@
+# FinAgent — Python Dependencies
+# Install: pip install -r requirements.txt
+
+# ── Data Collection ────────────────────────────────────────────────────
+yfinance==0.2.54                # Yahoo Finance OHLCV + fundamentals
+requests==2.32.3                # HTTP client for NewsAPI, FRED REST calls
+httpx==0.28.1                   # Async HTTP (transitive dep of groq)
+
+# ── Data Processing ────────────────────────────────────────────────────
+pandas==2.2.3                   # DataFrame operations
+numpy==2.2.5                    # Numerical computing
+python-dateutil==2.9.0          # Date parsing utilities
+
+# ── Visualisation ──────────────────────────────────────────────────────
+plotly==6.0.1                   # Interactive charts & dashboard
+matplotlib==3.10.1              # Static chart base
+seaborn==0.13.2                 # Statistical visualisation
+kaleido==0.2.1                  # Plotly static PNG/PDF export
+
+# ── AI / LLM ───────────────────────────────────────────────────────────
+groq==1.2.0                     # Groq API client (Llama 3.3 70B)
+
+# ── Report Generation ──────────────────────────────────────────────────
+reportlab==4.4.1                # PDF report builder
+
+# ── Notebook Environment ───────────────────────────────────────────────
+jupyterlab==4.4.2               # JupyterLab IDE
+ipykernel==6.29.5               # Jupyter kernel
+ipywidgets==8.1.5               # Interactive widgets in notebooks
+
+# ── Utilities ──────────────────────────────────────────────────────────
+python-dotenv==1.1.0            # Load .env file into os.environ
+tqdm==4.67.1                    # Progress bars
+pathlib2==2.3.7                 # Path utilities (backcompat)
+
+# ── Dev / Quality ──────────────────────────────────────────────────────
+black==25.1.0                   # Code formatter (PEP 8)
+flake8==7.2.0                   # Linter
